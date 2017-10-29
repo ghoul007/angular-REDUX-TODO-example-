@@ -6,12 +6,18 @@ import { CounterComponent } from './counter/counter.component';
 import { ButtonsComponent } from './counter/buttons/buttons.component';
 import { IAppStore, rootReducer, INIT_STATE } from './store'
 
-import { NgReduxModule, NgRedux, DevToolsExtension } from 'ng2-redux'
+import { NgReduxModule, NgRedux, DevToolsExtension } from 'ng2-redux';
+import { TodoComponent } from './todo/todo.component';
+import { AddTodoComponent } from './Todo/add-todo/add-todo.component';
+import { TodoListComponent } from './Todo/todo-list/todo-list.component'
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    TodoComponent,
+    AddTodoComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule, NgReduxModule
