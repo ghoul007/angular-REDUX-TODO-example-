@@ -8,8 +8,8 @@ import { IAppStore, rootReducer, INIT_STATE } from './store'
 
 import { NgReduxModule, NgRedux, DevToolsExtension } from 'ng2-redux';
 import { TodoComponent } from './todo/todo.component';
-import { AddTodoComponent } from './Todo/add-todo/add-todo.component';
-import { TodoListComponent } from './Todo/todo-list/todo-list.component'
+import { AddTodoComponent } from './todo/add-todo/add-todo.component';
+import { TodoListComponent } from './todo/todo-list/todo-list.component'
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,7 +1,6 @@
 <ul>
-  <li  *ngFor="let todo of todos | async" >
-    <label>{{ todo._id   }} : {{todo.title}}</label>
-    <button>delete</button>
-  </li>
-   
+    <li *ngFor="let todo of todos | async ">
+        <label>{{ todo._id   }} : {{todo.title}}</label>
+        <button (click)="deleteIteme(todo._id)">delete</button>
+    </li>
 </ul>
